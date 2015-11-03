@@ -10,10 +10,12 @@
 		385F2E671BE90F7F002B6C30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 385F2E661BE90F7F002B6C30 /* main.m */; };
 		385F2E6A1BE90F7F002B6C30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385F2E691BE90F7F002B6C30 /* AppDelegate.m */; };
 		385F2E6D1BE90F7F002B6C30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385F2E6C1BE90F7F002B6C30 /* ViewController.m */; };
-		385F2E701BE90F7F002B6C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385F2E6E1BE90F7F002B6C30 /* Main.storyboard */; };
 		385F2E721BE90F7F002B6C30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385F2E711BE90F7F002B6C30 /* Images.xcassets */; };
 		385F2E751BE90F7F002B6C30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 385F2E731BE90F7F002B6C30 /* LaunchScreen.xib */; };
 		385F2E811BE90F7F002B6C30 /* TryOpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385F2E801BE90F7F002B6C30 /* TryOpenGLTests.m */; };
+		385F2E8B1BE91059002B6C30 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385F2E8A1BE91059002B6C30 /* OpenGLES.framework */; };
+		385F2E8D1BE91061002B6C30 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385F2E8C1BE91061002B6C30 /* QuartzCore.framework */; };
+		385F2E911BE910DA002B6C30 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385F2E901BE910DA002B6C30 /* OpenGLView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +36,15 @@
 		385F2E691BE90F7F002B6C30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		385F2E6B1BE90F7F002B6C30 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		385F2E6C1BE90F7F002B6C30 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		385F2E6F1BE90F7F002B6C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		385F2E711BE90F7F002B6C30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		385F2E741BE90F7F002B6C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		385F2E7A1BE90F7F002B6C30 /* TryOpenGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryOpenGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		385F2E7F1BE90F7F002B6C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		385F2E801BE90F7F002B6C30 /* TryOpenGLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TryOpenGLTests.m; sourceTree = "<group>"; };
+		385F2E8A1BE91059002B6C30 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		385F2E8C1BE91061002B6C30 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		385F2E8F1BE910DA002B6C30 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		385F2E901BE910DA002B6C30 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385F2E8D1BE91061002B6C30 /* QuartzCore.framework in Frameworks */,
+				385F2E8B1BE91059002B6C30 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,7 @@
 		385F2E581BE90F7F002B6C30 = {
 			isa = PBXGroup;
 			children = (
+				385F2E8E1BE9107E002B6C30 /* Frameworks */,
 				385F2E631BE90F7F002B6C30 /* TryOpenGL */,
 				385F2E7D1BE90F7F002B6C30 /* TryOpenGLTests */,
 				385F2E621BE90F7F002B6C30 /* Products */,
@@ -85,10 +93,11 @@
 				385F2E691BE90F7F002B6C30 /* AppDelegate.m */,
 				385F2E6B1BE90F7F002B6C30 /* ViewController.h */,
 				385F2E6C1BE90F7F002B6C30 /* ViewController.m */,
-				385F2E6E1BE90F7F002B6C30 /* Main.storyboard */,
 				385F2E711BE90F7F002B6C30 /* Images.xcassets */,
 				385F2E731BE90F7F002B6C30 /* LaunchScreen.xib */,
 				385F2E641BE90F7F002B6C30 /* Supporting Files */,
+				385F2E8F1BE910DA002B6C30 /* OpenGLView.h */,
+				385F2E901BE910DA002B6C30 /* OpenGLView.m */,
 			);
 			path = TryOpenGL;
 			sourceTree = "<group>";
@@ -117,6 +126,15 @@
 				385F2E7F1BE90F7F002B6C30 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		385F2E8E1BE9107E002B6C30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				385F2E8A1BE91059002B6C30 /* OpenGLES.framework */,
+				385F2E8C1BE91061002B6C30 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +217,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385F2E701BE90F7F002B6C30 /* Main.storyboard in Resources */,
 				385F2E751BE90F7F002B6C30 /* LaunchScreen.xib in Resources */,
 				385F2E721BE90F7F002B6C30 /* Images.xcassets in Resources */,
 			);
@@ -222,6 +239,7 @@
 				385F2E6D1BE90F7F002B6C30 /* ViewController.m in Sources */,
 				385F2E6A1BE90F7F002B6C30 /* AppDelegate.m in Sources */,
 				385F2E671BE90F7F002B6C30 /* main.m in Sources */,
+				385F2E911BE910DA002B6C30 /* OpenGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +262,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		385F2E6E1BE90F7F002B6C30 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				385F2E6F1BE90F7F002B6C30 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		385F2E731BE90F7F002B6C30 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

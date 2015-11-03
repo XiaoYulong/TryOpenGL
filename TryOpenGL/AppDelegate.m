@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OpenGLView.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    OpenGLView *openGLView = [[OpenGLView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window addSubview:openGLView];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
